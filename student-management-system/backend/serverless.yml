@@ -1,0 +1,41 @@
+service: student-management-system
+
+provider:
+  name: aws
+  runtime: python3.8
+  region: us-east-1
+
+functions:
+  api:
+    handler: main.app
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+          cors: true
+
+resources:
+  Resources:
+    ApiGatewayRestApi:
+      Type: AWS::ApiGateway::RestApi
+      Properties:
+        Name: StudentManagementAPI
+        Description: API for managing student records
+
+    ApiGatewayDeployment:
+      Type: AWS::ApiGateway::Deployment
+      Properties:
+        RestApiId:
+          Ref: ApiGatewayRestApi
+        StageName: prod
+      DependsOn: ApiGatewayRestApi
+
+plugins:
+  - serverless-warmup-plugin
+
+custom:
+  warmup:
+    enabled: true
+    name: warmup
+    prewarm: true
+    timeout: 30

@@ -1,0 +1,15 @@
+{
+  "build": {
+    "env": {
+      "DATABASE_URL": "sqlite:///./db/user_management.db",
+      "SECRET_KEY": "your-secret-key-here",
+      "CORS_ORIGINS": "http://localhost:3001"
+    },
+    "installCommand": "pip install -r requirements.txt",
+    "startCommand": "uvicorn main:app --host 0.0.0.0 --port 8000"
+  },
+  "deploy": {
+    "type": "docker",
+    "dockerfile": "Dockerfile"
+  }
+}
