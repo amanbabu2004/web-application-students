@@ -1,0 +1,28 @@
+service: user-management-api
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: us-east-1
+  environment:
+    DATABASE_URL: sqlite:///./db/user_management.db
+
+functions:
+  api:
+    handler: main.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: ANY
+          cors: true
+      - http:
+          path: /
+          method: ANY
+          cors: true
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux

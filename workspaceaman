@@ -1,0 +1,169 @@
+PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> echo "Y" | npm start
+
+PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> Push-Location "C:\Users\Yasmi\OneDrive\Desktop\amanwork\frontend"; npm start
+
+node --version; npm --version
+
+$env:PORT=3001; npm start
+
+PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> docker exec backend-container python db_tool.py --stats
+PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> docker exec backend-container ls -la /app/db
+
+ cd C:\Users\Yasmi\OneDrive\Desktop\amanwork\backend; python db_tool.py --stats
+ 
+ git push -u origin main
+ 
+ PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> git remote add origin https://github.com/amanbabu2004/web-application-students.git
+ 
+ PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> git branch -M main
+ 
+  git commit -m "first commit"
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> git add README.md
+  > git init
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> docker run -d --name backend-container -p 8080:8000 user-management-backend
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> cd C:\Users\Yasmi\OneDrive\Desktop\amanwork; docker build -t user-management-backend ./backend
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> echo Y | cd C:\Users\Yasmi\OneDrive\Desktop\amanwork\frontend; npm start
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> python --version; python main.py   
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> C:\Python313\python.exe .\main.py
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> cd C:\Users\Yasmi\OneDrive\Desktop\amanwork; docker --version
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> C:\Python313\python.exe db_tool.py --search "John"
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> netstat -ano | findstr 8000
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> C:\Python313\python.exe -m uvicorn main:app --reload --host 0.0.0.0 --port 8000
+  
+  PS C:\Users\Yasmi\OneDrive\Desktop\amanwork> Set-Location "C:\Users\Yasmi\OneDrive\Desktop\amanwork\frontend"; $env:PORT=3001; npm start
+  
+  
+  https://github.com/amanbabu2004
+  
+  
+  
+  prompt_sample
+  
+  FULL PROMPT (copy & paste ready):
+
+📌 Prompt:
+
+
+
+Create a simple full-stack web application with:
+
+
+
+🔧 Backend (Python using FastAPI):
+
+Use FastAPI to expose REST APIs.
+
+
+
+Use an in-memory dictionary to simulate a user database (no external DB).
+
+
+
+Each user has: id, name, email, age, and occupation.
+
+
+
+Implement full CRUD functionality:
+
+
+
+POST /users/ – Create a new user
+
+
+
+GET /users/ – Get all users
+
+
+
+GET /users/{id} – Get user by ID
+
+
+
+PUT /users/{id} – Update user
+
+
+
+DELETE /users/{id} – Delete user
+
+
+
+Enable CORS to allow frontend (React) access.
+
+
+
+💻 Frontend (React):
+
+Create a simple UI using React with the following pages/components:
+
+
+
+User List Page: Shows all users (GET).
+
+
+
+Add User Page: Form to add a user (POST).
+
+
+
+Edit User Page: Form to update user by ID (PUT).
+
+
+
+Delete Button: Delete user by ID (DELETE).
+
+
+
+Get Single User: Optional feature to fetch and display one user by ID.
+
+
+
+Use Axios for API calls.
+
+
+
+Keep styling minimal (use basic HTML/CSS or Tailwind if desired).
+
+
+
+Show success/error messages on actions.
+
+
+
+✅ Bonus (optional):
+
+Use React Router to manage page navigation.
+
+
+
+Use useState and useEffect properly for state management.
+
+
+
+Provide instructions to run backend (uvicorn main:app --reload) and frontend (npm start).
+
+
+
+Would you like me to generate the actual code for both backend and frontend too?
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
